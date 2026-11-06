@@ -1,0 +1,17 @@
+public class Tabungan extends Rekening{
+
+    private double bungaPersen;
+
+    public Tabungan(String nomor, String pemilik, int saldo, double bungaPersen) {
+        super(nomor, pemilik, saldo);
+        this.bungaPersen = bungaPersen;
+    }
+
+    public int tambahBunga() {
+        int bunga = (int) (saldo * bungaPersen / 100);
+
+        setor(bunga);
+
+        return bunga;
+    }
+}
