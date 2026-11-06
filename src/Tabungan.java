@@ -1,4 +1,4 @@
-public class Tabungan extends Rekening{
+public class Tabungan extends Rekening {
 
     private double bungaPersen;
 
