@@ -18,4 +18,12 @@ public class Giro extends Rekening {
         saldo -= jumlah;
         return true;
     }
+
+    @Override
+    public void cetakInfo() {
+        super.cetakInfo();
+        System.out.println(
+                "Batas Overdraft: " + formatRupiah(batasOverdraft)
+        );
+    }
 }
