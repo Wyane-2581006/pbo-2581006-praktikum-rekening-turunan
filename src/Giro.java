@@ -23,7 +23,7 @@ public class Giro extends Rekening {
     public void cetakInfo() {
         super.cetakInfo();
         System.out.println(
-                "Batas Overdraft: " + formatRupiah(batasOverdraft)
+                "Giro, Batas Overdraft: " + formatRupiah(batasOverdraft)
         );
     }
 }
